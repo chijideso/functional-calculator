@@ -1,0 +1,66 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: gotham rounded, sans-serif;
+    font-weight: normal
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00aaff, #00ff6c) ;
+}
+.calculator{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto),repeat(5, 100px);
+}
+.calculator > .button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 3px solid white;
+    box-shadow: 2px 4px 8px 4px #15643d;;
+    outline: none;
+    border-radius:5px;
+   margin-top: 5px;
+    
+  
+    background-color: rgba(255, 255, 255, .75);
+}
+.calculator > .button:hover {
+    background-color: rgba(2, 8, 5, 0.9);
+    color: white;
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/ -1;
+    background-color:rgba(0, 0, 0, .75) ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .total{
+color: rgba(255, 255, 255, .75);
+font-size: 1.5rem;
+
+}
+.output .oprator{
+    color: white;
+    font-size: 2.5rem;
+    
+}
+.output .oprator input, .output .total input{
+    background-color: unset;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    text-align: right;
+}

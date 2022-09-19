@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+            <div class="total"><input type="text" id="tot" placeholder="0" disabled></div>
+            <div class="oprator"><input type="text" name="" id="eval" placeholder="0" disabled></div>
+        </div>
+        <input type="button" class="button span-two" onclick="cleard()" value="AC">
+        <input type="button" class="button" onclick="dell()" value="DEL">
+        <input type="button"onclick="getval(this)"  class="button" value="/">
+        <input type="button"onclick="getval(this)"  class="button" value="1">
+        <input type="button"onclick="getval(this)"  class="button" value="2">
+        <input type="button"onclick="getval(this)"  class="button" value="3">
+        <input type="button"onclick="getval(this)"  class="button" value="*">
+        <input type="button"onclick="getval(this)"  class="button" value="4">
+        <input type="button"onclick="getval(this)"  class="button" value="5">
+        <input type="button"onclick="getval(this)"  class="button" value="6">
+        <input type="button"onclick="getval(this)"  class="button" value="+">
+        <input type="button"onclick="getval(this)"  class="button" value="7">
+        <input type="button"onclick="getval(this)"  class="button" value="8">
+        <input type="button"onclick="getval(this)"  class="button" value="9">
+        <input type="button"onclick="getval(this)"  class="button" value="-">
+        <input type="button"onclick="getval(this)"  class="button" value=".">
+        <input type="button"onclick="getval(this)"  class="button" value="0">
+        <input type="button" class="button span-two" onclick="equalto()" value="=">
+    </div>
+</body>
+</html>
